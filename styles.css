@@ -1,0 +1,52 @@
+/* Eliminates unwanted white space in browser */
+html, body {
+    margin: 0; 
+    padding: 0;
+  }
+
+/* HEADER */
+.header {
+    height: 75px;
+    width: auto;
+    border-color: black;
+    border: solid 2px;
+    display: flex;
+}
+
+.header-logo-container, .header-button-container, .header-profile-container {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: bold;
+    border: solid 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo-container {
+    flex: 1;
+}
+
+.header-button-container {
+    flex: 3;
+}
+
+.header-profile-container {
+    flex: 1;
+}
+
+/* BODY CONTENT */
+.body-content {
+    height: 75px;
+    width: auto;
+    border-color: black;
+    border: solid 2px;
+    display: flex;
+}
+
+.main-body-content {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
