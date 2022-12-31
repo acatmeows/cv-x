@@ -5,48 +5,54 @@ html, body {
   }
 
 /* HEADER */
-.header {
+.header-container {
+    /* Set header height */
     height: 75px;
+    /* Width to auto so it spans across screen */
     width: auto;
-    border-color: black;
-    border: solid 2px;
+    /* Make it a flexbox or else children will vert stack instead of spanning*/
     display: flex;
+    /* Anything in the header will use these properties if inheritance is in play */
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
 }
 
-.header-logo-container, .header-button-container, .header-profile-container {
+.header-child-logo, .header-child-buttons, .header-child-account {
     color: black;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
-    font-weight: bold;
-    border: solid 2px black;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.header-logo-container {
+    background-color: transparent;
+    /* Flex is 1 by default for all header children */
     flex: 1;
 }
 
-.header-button-container {
+.header-child-buttons {
+    /* Flex is 3 so this spans more of the header than other children, overrides default flex value */
     flex: 3;
+    font-size: 18px;
 }
 
-.header-profile-container {
-    flex: 1;
-}
-
-/* BODY CONTENT */
-.body-content {
-    height: 75px;
-    width: auto;
-    border-color: black;
-    border: solid 2px;
-    display: flex;
-}
-
-.main-body-content {
-    color: black;
+.header-container .header-logo-button {
+    text-align: center;
+    /* This button gets its own font size */
+    font-size: 28px;
+    background-color: transparent;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 24px;
+}
+
+/* MATERIAL ICONS */
+.material-icons {
+    color: black;
+    background-color: transparent;
+    border: none;
+}
+
+.material-icons.account-button {
+    font-size: 36px;
+}
+
+.material-icons.info-button {
+    font-size: 36px;
 }
