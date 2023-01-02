@@ -15,6 +15,7 @@ html, body {
     /* Anything in the header will use these properties if inheritance is in play */
     font-family: 'Courier New', Courier, monospace;
     color: black;
+    background: linear-gradient(180deg, rgb(243, 243, 243) 75%, rgba(255,255,255,1) 100%);
 }
 
 .header-child-logo, .header-child-buttons, .header-child-account {
@@ -43,16 +44,105 @@ html, body {
 }
 
 /* MATERIAL ICONS */
-.material-icons {
+.material-icons-outlined {
     color: black;
     background-color: transparent;
     border: none;
 }
 
-.material-icons.account-button {
+.material-icons-outlined.account-button {
     font-size: 36px;
 }
 
-.material-icons.info-button {
+.material-icons-outlined.info-button {
     font-size: 36px;
+    margin: 25px;
+}
+
+/* BODY */
+.body-title-row, .body-subtitle-row, .body-text-row, .body-icon-row, .footer-row {
+    display: flex;
+}
+
+.body-title-container {
+    display: flex;
+    flex: 1;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 24px;
+    justify-content: center;
+    text-decoration: underline;
+    margin: 50px;
+}
+
+.body-subtitle-container {
+    display: flex;
+    flex: 1;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    justify-content: center;
+    margin: 15px;
+}
+
+.body-text-container {
+    display: flex;
+    flex: 1;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 14px;
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.body-icon-container.material-icons-outlined.ad-button  {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: 15px;
+}
+
+.row-spacer {
+    width: auto;
+    height: 50px;
+}
+
+/* SIGN UP */
+.sign-up-row {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up-button {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 24px;
+}
+
+/* FOOTER */
+
+.footer-row {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 5%, rgb(243, 243, 243) 20%);
+}
+
+.footer-row-container {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 12px;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
 }
